@@ -13,7 +13,14 @@ interface IState {
 }
 
 function App() {
-  const [people, setPeople] = useState<IState["people"]>([]);
+  const [people, setPeople] = useState<IState["people"]>([
+    {
+      name: "Ernest Boamah Gaisie",
+      url: "https://media-exp1.licdn.com/dms/image/C4E03AQFcfdTzltRfHw/profile-displayphoto-shrink_200_200/0/1652452120895?e=1660176000&v=beta&t=wqCGu9VZkxFlU5nV0ft6oTXtrUV0bdOZnjFmjmJ5yq8",
+      age: 24,
+      note: "Best programmer"
+    }
+  ]);
 
   return (
     <div className="App">
